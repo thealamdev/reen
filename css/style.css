@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Oswald:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ================ navbar section start ============== */
+
+
+.nav {
+    display: flex;
+}
+
+.nav_logo {
+    width: 20%;
+    padding-top: 35px;
+}
+
+.nav_list {
+    width: 80%;
+    text-align: right;
+    line-height: 110px;
+}
+
+.nav_list ul li {
+    display: inline-block;
+    padding-left: 43px;
+}
+
+.nav_list ul li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #506a85;
+    text-transform: uppercase;
+}
+
+.prev{
+position:absolute;
+top:50%;
+left:20px;
+transform: translateY(-50%);
+z-index: 100;
+color:white;
+}
+
+.next{
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform: translateY(-50%);
+    z-index: 100;
+    color:white;
+}
+/* ================== banner section start ===================== */
+
+.slider {
+    position: relative;
+}
+
+/* .img1{
+    background: url(../images/banner-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.img2{
+    background: url(../images/banner-3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.img3{
+    background: url(../images/banner-4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.img4{
+    background: url(../images/banner-1.jpg) no-repeat center;
+    background-size: cover;
+} */
+
+
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* padding:300px 300px; */
+}
+
+.overlay_text {
+    text-align: center;
+    width: 775px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay_text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+.overlay_text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #d3c7c7;
+    line-height: 26px;
+    text-transform: capitalize;
+    padding-top: 35px;
+}
+
+.overlay_text a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-top: 65px;
+    background: #00bc9c;
+    padding: 15px 35px;
+    border-radius: 3px;
+}
+
+.three {
+    text-align: right;
+}
+
+.three h2 {
+    background: #506a85;
+    padding: 10px;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+h3 {
+    background: #506a85;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 46px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* ================== service section start ============= */
+
+#service {
+    margin-top: 130px;
+}
+
+.service_text {
+    text-align: center;
+}
+
+.service_text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(67, 105, 153);
+    line-height: 26px;
+}
+
+.service_text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #9e9393;
+    line-height: 26px;
+    padding-top: 20px;
+}
+
+/* ----------- service main2 css------------- */
+#service2 {
+    margin-top: 60px;
+    margin-bottom: 130px;
+}
+
+.service_main2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_left {
+    width: 40px;
+}
+
+.item_left img {
+    width: 100%;
+}
+
+.item_right {
+    width: 280px;
+}
+
+.item_right h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #565c91;
+    line-height: 26px;
+}
+
+.item_right p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #9e9393;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+/* =================== blog section start =============== */
+
+#blog {
+    background: #f2f5f7;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.blog_text {
+    text-align: center;
+}
+
+.blog_text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #506a85;
+    line-height: 20px;
+}
+
+
+
+.blog_text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #73879c;
+    line-height: 20px;
+    padding-top: 24px;
+    padding-bottom: 70px;
+}
+
+/* --------------- blog_img part ----------- */
+
+.blog_img_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_img {
+    width: 570px;
+    border: 1px solid #e6e9ed;
+    background: white;
+}
+
+.blog_img img {
+    width: 100%;
+}
+
+.blog_img_text {
+    text-align: center;
+    padding: 20px;
+}
+
+.blog_img_text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #506a85;
+}
+
+
+.blog_img_text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #73879c;
+}
+
+
+.blog_photo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.blog_photo_item {
+    width: 270px;
+}
+
+.blog_photo_item img {
+    width: 100%;
+}
+
+/* ---------------- about section start ---------------- */
+
+
+#about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about_text {
+    text-align: center;
+}
+
+.about_text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #506a85;
+}
+
+.about_text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #73879c;
+    padding-top: 20px;
+}
+
+.about_text a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    background: #00bc9c;
+    color: white;
+    font-family: 20px;
+    margin-top: 45px;
+}
+
+/* ============= footer section start =================== */
+#footer {
+    background: #2f4052;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_item {
+    width: 265px;
+}
+
+.common_text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    padding-bottom: 24px;
+}
+
+.footer_text img {
+    padding-bottom: 25px;
+}
+
+.footer_text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    font-size: 13px;
+    padding-bottom: 23px;
+
+}
+
+.footer_text h4 {
+    color: white;
+    display: inline-block;
+}
+
+span {
+    color: white;
+    padding-left: 10px;
+}
+
+/* --------- footer img part --------- */
+.footer_img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.footer_img img {
+    padding-bottom: 10px;
+}
+
+.footer_text ul li {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    padding-top: 5px;
+}
+
+.footer_text input {
+    padding: 10px 20px;
+    width:265px;
+}
+
+.footer_text{
+    position: relative;
+}
+
+.footer_text button {
+    position: absolute;
+    top: 63px;
+    left: 131px;
+    color: white;
+    padding: 6px 18px;
+    background: red;
+    text-transform: uppercase;
+    border:none;
+}
+
+/* ============== last section start =========== */
+#last{
+    background:#283645 ;
+}
+
+.last_main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    line-height: 80px;
+}
+
+.left h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    color: #69829b;
+    font-size: 14px;
+    
+}
+
+.right{
+    line-height: 80px;
+}
+
+.right ul li{
+    display:inline-block;
+}
+
+.right ul li a{
+    color: #73879c;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+/* ==================== scrollUp css================== */
+
+#scrollUp {
+    background: url(../images/top.png);
+    bottom: 20px;
+    right: 20px;
+    width:38px;
+    height:38px;
+  }
+
+  /* bell icon css */
+
+  .fa-bell{
+    position: absolute;
+    top: 67px;
+    right: 3px;
+    color: gray;
+  }
